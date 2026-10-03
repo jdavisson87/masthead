@@ -60,9 +60,9 @@
   --ds-border-strong: #686d5c; /* 3:1+ on bg, surface, raised */
   --ds-text: #ecebe4;
   --ds-muted: #a3a399;
-  --ds-accent: #c4f34b; /* lime */
-  --ds-accent-hover: #d4fa6e;
-  --ds-accent-fg: #0c0d0b; /* dark text on lime */
+  --ds-accent: #f5b942; /* amber */
+  --ds-accent-hover: #fbc965;
+  --ds-accent-fg: #0c0d0b; /* dark text on amber */
   --ds-danger: #f97066;
   --ds-success: #86efac;
 }

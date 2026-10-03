@@ -1,7 +1,7 @@
 # Masthead
 
 Accessible React component library built with React Aria, Tailwind v4, and TypeScript.
-A sharp, editorial look in light mode, with a lime accent in dark mode.
+A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 **[Live Storybook →](https://jdavisson87.github.io/masthead/)**
 
