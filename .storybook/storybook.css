@@ -1,5 +1,6 @@
 /* Storybook-only: the library itself does not ship preflight. */
-@import "tailwindcss/preflight.css";
+@layer theme, base, components, utilities;
+@import "tailwindcss/preflight.css" layer(base);
 @import "../src/styles.css";
 
 body,

@@ -29,7 +29,8 @@
 
   --font-serif: "Newsreader Variable", "Newsreader", Georgia, serif;
   --font-sans: "Inter Variable", "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace;
+  --font-mono:
+    "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace;
 
   --radius-sm: 2px;
   --radius-md: 4px;
@@ -41,7 +42,7 @@
   --ds-surface: #ffffff;
   --ds-raised: #f3f1eb;
   --ds-border: #e2dfd6;
-  --ds-border-strong: #c9c5b8;
+  --ds-border-strong: #8a8678; /* 3:1+ on bg, surface, raised: WCAG 1.4.11 for control boundaries */
   --ds-text: #14130f;
   --ds-muted: #5c5a52;
   --ds-accent: #1e40af; /* ink blue */
@@ -56,7 +57,7 @@
   --ds-surface: #141512;
   --ds-raised: #1c1d19;
   --ds-border: #2a2c26;
-  --ds-border-strong: #3d4036;
+  --ds-border-strong: #686d5c; /* 3:1+ on bg, surface, raised */
   --ds-text: #ecebe4;
   --ds-muted: #a3a399;
   --ds-accent: #c4f34b; /* lime */
