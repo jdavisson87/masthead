@@ -1,0 +1,11 @@
+/* Storybook-only: the library itself does not ship preflight. */
+@import "tailwindcss/preflight.css";
+@import "../src/styles.css";
+
+body,
+.sb-show-main,
+.docs-story {
+  background-color: var(--ds-bg);
+  color: var(--ds-text);
+  font-family: var(--font-sans);
+}
