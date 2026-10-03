@@ -3,7 +3,7 @@
 Accessible React component library built with React Aria, Tailwind v4, and TypeScript.
 A sharp, editorial look in light mode, with a lime accent in dark mode.
 
-**Status:** early development. Storybook link and npm badge coming once the first release ships.
+**[Live Storybook →](https://jdavisson87.github.io/masthead/)**
 
 ## Stack
 
