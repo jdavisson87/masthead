@@ -17,3 +17,11 @@ export {
 } from './components/Card/Card';
 export { IconButton, type IconButtonProps } from './components/IconButton/IconButton';
 export { Skeleton, skeletonStyles, type SkeletonProps } from './components/Skeleton/Skeleton';
+export {
+  Popover,
+  PopoverDialog,
+  PopoverTrigger,
+  popoverStyles,
+  type PopoverProps,
+  type PopoverDialogProps,
+} from './components/Popover/Popover';
