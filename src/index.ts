@@ -4,3 +4,4 @@ export { Button, buttonStyles, type ButtonProps } from './components/Button/Butt
 export { TextField, textFieldStyles, type TextFieldProps } from './components/TextField/TextField';
 export { Checkbox, checkboxStyles, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { Switch, switchStyles, type SwitchProps } from './components/Switch/Switch';
+export { Badge, badgeStyles, type BadgeProps } from './components/Badge/Badge';
