@@ -5,6 +5,20 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 **[Live Storybook →](https://jdavisson87.github.io/masthead/)**
 
+## Components
+
+| Component | Built on | Notes |
+|---|---|---|
+| **Button** | React Aria `Button` | `primary`, `secondary`, `ghost`, `danger` intents; `sm`, `md`, `lg` sizes |
+| **TextField** | React Aria `TextField` | Label, description, error message, real-time or native validation |
+| **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
+| **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
+| **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |
+
+Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
+
+More are planned: Card, Select, Dialog, Tooltip, Tabs, Toast, Table, and a multi-step form Stepper.
+
 ## Stack
 
 - React Aria Components for behavior and accessibility
