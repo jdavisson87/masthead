@@ -14,10 +14,11 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |
+| **Card** | Plain elements | Composable: `Card`, `CardHeader`, `CardTitle` (choose heading level), `CardContent`, `CardFooter` |
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: Card, Select, Dialog, Tooltip, Tabs, Toast, Table, and a multi-step form Stepper.
+More are planned: IconButton, Select, Dialog, Tooltip, Tabs, Toast, Table, and a multi-step form Stepper.
 
 ## Stack
 
