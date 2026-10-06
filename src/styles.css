@@ -79,3 +79,23 @@
     }
   }
 }
+
+/* Dialog: scrim behind the modal, plus entry animations. */
+@theme {
+  --color-scrim: rgb(12 13 11 / 0.5);
+
+  --animate-fade-in: fade-in 150ms ease-out;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  --animate-dialog-in: dialog-in 150ms ease-out;
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px) scale(0.98);
+    }
+  }
+}

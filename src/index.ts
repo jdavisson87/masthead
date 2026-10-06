@@ -26,3 +26,4 @@ export {
   type PopoverDialogProps,
 } from './components/Popover/Popover';
 export { Select, SelectItem, selectStyles, type SelectProps, type SelectItemProps } from './components/Select/Select';
+export { Dialog, DialogFooter, DialogTrigger, dialogStyles, type DialogProps } from './components/Dialog/Dialog';
