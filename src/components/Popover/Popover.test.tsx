@@ -53,7 +53,8 @@ describe('Popover', () => {
     await screen.findByRole('dialog');
     await userEvent.keyboard('{Escape}');
     await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
-    expect(trigger).toHaveFocus();
+    // React Aria restores focus on the next animation frame, so wait for it.
+    await waitFor(() => expect(trigger).toHaveFocus());
   });
 
   it('has no axe violations when open', async () => {

@@ -25,3 +25,4 @@ export {
   type PopoverProps,
   type PopoverDialogProps,
 } from './components/Popover/Popover';
+export { Select, SelectItem, selectStyles, type SelectProps, type SelectItemProps } from './components/Select/Select';
