@@ -20,11 +20,12 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Select** | React Aria `Select`, `ListBox`, `Popover` | Keyboard navigation, typeahead, label, description, error, static or dynamic items |
 | **Dialog** | React Aria `Modal`, `Dialog` | Focus trap, scroll lock, Escape and outside-click dismiss; `alertdialog` mode for destructive confirmations |
 | **Tooltip** | React Aria `TooltipTrigger`, `Tooltip` | Shows on hover and keyboard focus, hides on Escape, 500ms default delay, linked via `aria-describedby` |
+| **Toast** | React Aria toast region and queue | `<Toaster />` plus `toast.success()` / `toast.error()` from anywhere; timers pause on hover and focus; F6 jumps to the region |
 | **Card** | Plain elements | Composable: `Card`, `CardHeader`, `CardTitle` (choose heading level), `CardContent`, `CardFooter` |
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: Tabs, Toast, Table, and a multi-step form Stepper.
+More are planned: Tabs, Table, and a multi-step form Stepper.
 
 ## Stack
 
