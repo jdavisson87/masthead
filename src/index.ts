@@ -43,3 +43,18 @@ export {
   type ToastContentData,
   type ShowToastOptions,
 } from './components/Toast/Toast';
+export {
+  Table,
+  TableHeader,
+  TableBody,
+  Column,
+  Row,
+  Cell,
+  tableStyles,
+  type TableProps,
+  type TableHeaderProps,
+  type TableBodyProps,
+  type ColumnProps,
+  type RowProps,
+  type CellProps,
+} from './components/Table/Table';
