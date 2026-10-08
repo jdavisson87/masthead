@@ -58,3 +58,14 @@ export {
   type RowProps,
   type CellProps,
 } from './components/Table/Table';
+export {
+  Tabs,
+  TabList,
+  Tab,
+  TabPanel,
+  tabsStyles,
+  type TabsProps,
+  type TabListProps,
+  type TabProps,
+  type TabPanelProps,
+} from './components/Tabs/Tabs';
