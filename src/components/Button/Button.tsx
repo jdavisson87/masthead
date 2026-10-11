@@ -8,7 +8,7 @@ import { tv, type VariantProps } from 'tailwind-variants';
  */
 export const buttonStyles = tv({
   base: [
-    'inline-flex items-center justify-center gap-2 rounded-md border font-sans font-medium',
+    'masthead-control inline-flex items-center justify-center gap-2 rounded-md border font-sans font-medium',
     'cursor-default select-none transition-colors',
     'outline-hidden data-[focus-visible]:outline-2 data-[focus-visible]:outline-offset-2 data-[focus-visible]:outline-accent',
     'data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50',

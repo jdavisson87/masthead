@@ -18,13 +18,26 @@ const preview: Preview = {
         dynamicTitle: true,
       },
     },
+    contrast: {
+      description: 'Increased contrast',
+      toolbar: {
+        title: 'Contrast',
+        icon: 'contrast',
+        items: [
+          { value: 'off', title: 'Standard contrast' },
+          { value: 'more', title: 'Increased contrast' },
+        ],
+        dynamicTitle: true,
+      },
+    },
   },
-  initialGlobals: { theme: 'light' },
+  initialGlobals: { theme: 'light', contrast: 'off' },
   decorators: [
     (Story, context) => {
       // Stories that demonstrate theming (ThemeToggle) set parameters.manageTheme to own the class themselves.
       if (!context.parameters.manageTheme) {
         document.documentElement.classList.toggle('dark', context.globals.theme === 'dark');
+        document.documentElement.classList.toggle('contrast', context.globals.contrast === 'more');
       }
       return Story();
     },

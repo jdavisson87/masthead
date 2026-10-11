@@ -10,7 +10,7 @@ export const switchStyles = tv({
   slots: {
     root: 'group inline-flex items-center gap-3 font-sans text-sm text-text data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50',
     track:
-      'flex h-6 w-11 shrink-0 items-center rounded-md border px-[3px] outline-hidden transition-colors motion-reduce:transition-none',
+      'masthead-control flex h-6 w-11 shrink-0 items-center rounded-md border px-[3px] outline-hidden transition-colors motion-reduce:transition-none',
     thumb:
       'size-4 rounded-sm transition-transform motion-reduce:transition-none',
   },

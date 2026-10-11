@@ -24,7 +24,7 @@ export const selectStyles = tv({
     root: 'flex w-full flex-col gap-1.5 font-sans data-[disabled]:opacity-50',
     label: 'text-sm font-medium text-text',
     trigger:
-      'flex h-10 w-full items-center justify-between gap-2 rounded-md border bg-surface px-3 text-left text-sm text-text outline-hidden transition-colors data-[disabled]:cursor-not-allowed',
+      'masthead-control flex h-10 w-full items-center justify-between gap-2 rounded-md border bg-surface px-3 text-left text-sm text-text outline-hidden transition-colors data-[disabled]:cursor-not-allowed',
     value: 'truncate data-[placeholder]:text-muted',
     description: 'text-sm text-muted',
     error: 'text-sm text-danger',

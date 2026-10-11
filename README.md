@@ -23,7 +23,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Toast** | React Aria toast region and queue | `<Toaster />` plus `toast.success()` / `toast.error()` from anywhere; timers pause on hover and focus; F6 jumps to the region |
 | **Table** | React Aria `Table` | Sortable columns, row headers, optional multi-select (reuses Checkbox), empty state, arrow-key cell navigation |
 | **Tabs** | React Aria `Tabs`, `TabList`, `Tab`, `TabPanel` | Horizontal and vertical, arrow / Home / End keys, automatic or manual activation, disabled tabs |
-| **ThemeToggle** | React Aria `ToggleButtonGroup` | Light / system / dark segmented control; persisted, follows the OS live, syncs across tabs |
+| **ThemeToggle** / **ContrastToggle** | React Aria `ToggleButtonGroup`, `Switch` | Light / system / dark control plus an increased-contrast switch; persisted, follows OS settings live, syncs across tabs |
 | **Card** | Plain elements | Composable: `Card`, `CardHeader`, `CardTitle` (choose heading level), `CardContent`, `CardFooter` |
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
@@ -48,6 +48,10 @@ const { theme, resolvedTheme, setTheme } = useTheme();
 ```
 
 The choice (`light`, `dark`, or `system`) is stored in `localStorage` under `masthead-theme`. `system` follows the OS preference live.
+
+### Increased contrast
+
+`<ContrastToggle />` (or `setContrast(true)`) adds a `.contrast` class that works with both light and dark. Text and status colors reach 7:1 or better (WCAG AAA), control borders reach 11:1 or better, and controls get thicker borders (2px) and focus rings (3px). It turns on automatically when the OS reports `prefers-contrast: more`, until the user makes their own choice. A test reads the real tokens from `styles.css` and fails if any palette drops below its contrast threshold.
 
 ## Stack
 

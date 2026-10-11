@@ -19,7 +19,7 @@ export const textFieldStyles = tv({
     root: 'flex w-full flex-col gap-1.5 font-sans data-[disabled]:opacity-50',
     label: 'text-sm font-medium text-text',
     input: [
-      'h-10 w-full rounded-md border border-border-strong bg-surface px-3 text-sm text-text',
+      'masthead-control h-10 w-full rounded-md border border-border-strong bg-surface px-3 text-sm text-text',
       'placeholder:text-muted outline-hidden transition-colors',
       'data-[hovered]:border-text',
       'data-[focused]:border-accent data-[focused]:outline-2 data-[focused]:outline-accent',

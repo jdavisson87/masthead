@@ -11,7 +11,7 @@ import { useTheme } from '../../theme/useTheme';
  */
 export const themeToggleStyles = tv({
   slots: {
-    group: 'inline-flex items-center gap-0.5 rounded-md border border-border-strong bg-surface p-0.5 font-sans',
+    group: 'masthead-control inline-flex items-center gap-0.5 rounded-md border border-border-strong bg-surface p-0.5 font-sans',
     item: [
       'inline-flex cursor-default select-none items-center justify-center gap-1.5 rounded-sm font-medium outline-hidden transition-colors',
       'data-[focus-visible]:outline-2 data-[focus-visible]:outline-offset-2 data-[focus-visible]:outline-accent',

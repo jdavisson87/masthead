@@ -70,11 +70,14 @@ export {
   type TabPanelProps,
 } from './components/Tabs/Tabs';
 export { ThemeToggle, themeToggleStyles, type ThemeToggleProps } from './components/ThemeToggle/ThemeToggle';
+export { ContrastToggle, type ContrastToggleProps } from './components/ThemeToggle/ContrastToggle';
 export { useTheme, type UseThemeResult } from './theme/useTheme';
 export {
   setTheme,
+  setContrast,
   themeInitScript,
   THEME_STORAGE_KEY,
+  CONTRAST_STORAGE_KEY,
   type Theme,
   type ResolvedTheme,
 } from './theme/theme';

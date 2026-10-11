@@ -10,7 +10,7 @@ import { tv } from 'tailwind-variants';
 export const checkboxStyles = tv({
   slots: {
     root: 'group inline-flex items-center gap-2 font-sans text-sm text-text data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50',
-    box: 'flex size-5 shrink-0 items-center justify-center rounded-sm border text-accent-fg outline-hidden transition-colors',
+    box: 'masthead-control flex size-5 shrink-0 items-center justify-center rounded-sm border text-accent-fg outline-hidden transition-colors',
   },
   variants: {
     checked: {

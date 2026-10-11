@@ -50,6 +50,9 @@
   --ds-accent-fg: #ffffff;
   --ds-danger: #b42318;
   --ds-success: #166534;
+
+  --ds-focus-width: 2px;
+  --ds-control-border: 1px;
 }
 
 .dark {
@@ -65,6 +68,57 @@
   --ds-accent-fg: #0c0d0b; /* dark text on amber */
   --ds-danger: #f97066;
   --ds-success: #86efac;
+}
+
+/*
+ * Increased contrast. A modifier layered on both themes: add `.contrast` to <html>
+ * (alone for light, together with `.dark` for dark). Text and status colors reach 7:1+
+ * (WCAG AAA); control borders reach 11:1+. Controls also get a thicker border and focus ring.
+ * Turned on by the ContrastToggle, or automatically by the OS `prefers-contrast: more` setting.
+ */
+.contrast {
+  --ds-bg: #ffffff;
+  --ds-surface: #ffffff;
+  --ds-raised: #efede6;
+  --ds-border: #6b685e;
+  --ds-border-strong: #14130f;
+  --ds-text: #000000;
+  --ds-muted: #33312b;
+  --ds-accent: #0a2a9c;
+  --ds-accent-hover: #061c70;
+  --ds-accent-fg: #ffffff;
+  --ds-danger: #8c0f0f;
+  --ds-success: #0b4a1c;
+
+  --ds-focus-width: 3px;
+  --ds-control-border: 2px;
+}
+
+.contrast.dark {
+  --ds-bg: #000000;
+  --ds-surface: #0a0a08;
+  --ds-raised: #1a1a16;
+  --ds-border: #8f8f82;
+  --ds-border-strong: #d4d4c8;
+  --ds-text: #ffffff;
+  --ds-muted: #dcdcd0;
+  --ds-accent: #ffcf5c;
+  --ds-accent-hover: #ffe08a;
+  --ds-accent-fg: #000000;
+  --ds-danger: #ff9d96;
+  --ds-success: #9df5b0;
+}
+
+/*
+ * Unlayered on purpose: it must beat the width utilities in the layered stylesheet.
+ * `.masthead-control` marks every bordered control (Button, TextField, Checkbox, Switch, Select, ThemeToggle).
+ * Elements with no outline style are unaffected by the focus-ring width rule.
+ */
+.masthead-control {
+  border-width: var(--ds-control-border);
+}
+.contrast * {
+  outline-width: var(--ds-focus-width);
 }
 
 /* Elevation: the one shadow in the system, for floating layers (Popover, Dialog, Toast). */
