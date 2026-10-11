@@ -69,3 +69,12 @@ export {
   type TabProps,
   type TabPanelProps,
 } from './components/Tabs/Tabs';
+export { ThemeToggle, themeToggleStyles, type ThemeToggleProps } from './components/ThemeToggle/ThemeToggle';
+export { useTheme, type UseThemeResult } from './theme/useTheme';
+export {
+  setTheme,
+  themeInitScript,
+  THEME_STORAGE_KEY,
+  type Theme,
+  type ResolvedTheme,
+} from './theme/theme';

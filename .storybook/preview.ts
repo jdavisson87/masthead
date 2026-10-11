@@ -22,7 +22,10 @@ const preview: Preview = {
   initialGlobals: { theme: 'light' },
   decorators: [
     (Story, context) => {
-      document.documentElement.classList.toggle('dark', context.globals.theme === 'dark');
+      // Stories that demonstrate theming (ThemeToggle) set parameters.manageTheme to own the class themselves.
+      if (!context.parameters.manageTheme) {
+        document.documentElement.classList.toggle('dark', context.globals.theme === 'dark');
+      }
       return Story();
     },
   ],

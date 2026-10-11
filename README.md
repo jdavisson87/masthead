@@ -23,11 +23,31 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Toast** | React Aria toast region and queue | `<Toaster />` plus `toast.success()` / `toast.error()` from anywhere; timers pause on hover and focus; F6 jumps to the region |
 | **Table** | React Aria `Table` | Sortable columns, row headers, optional multi-select (reuses Checkbox), empty state, arrow-key cell navigation |
 | **Tabs** | React Aria `Tabs`, `TabList`, `Tab`, `TabPanel` | Horizontal and vertical, arrow / Home / End keys, automatic or manual activation, disabled tabs |
+| **ThemeToggle** | React Aria `ToggleButtonGroup` | Light / system / dark segmented control; persisted, follows the OS live, syncs across tabs |
 | **Card** | Plain elements | Composable: `Card`, `CardHeader`, `CardTitle` (choose heading level), `CardContent`, `CardFooter` |
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: Menu, RadioGroup, a multi-step form Stepper, and a theme toggle.
+More are planned: Menu, RadioGroup, and a multi-step form Stepper.
+
+## Theming
+
+Dark mode is a `.dark` class on `<html>`. Masthead manages it for you:
+
+```tsx
+import { ThemeToggle, themeInitScript, useTheme } from '@jdavisson/masthead';
+
+// 1. Prevent a flash of the wrong theme: inline this in <head>, before your CSS.
+<script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+
+// 2. Drop in the control...
+<ThemeToggle />
+
+// 3. ...or build your own with the hook.
+const { theme, resolvedTheme, setTheme } = useTheme();
+```
+
+The choice (`light`, `dark`, or `system`) is stored in `localStorage` under `masthead-theme`. `system` follows the OS preference live.
 
 ## Stack
 
