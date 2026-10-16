@@ -25,6 +25,14 @@ export {
   type PopoverProps,
   type PopoverDialogProps,
 } from './components/Popover/Popover';
+export {
+  RadioGroup,
+  Radio,
+  radioGroupStyles,
+  radioStyles,
+  type RadioGroupProps,
+  type RadioProps,
+} from './components/RadioGroup/RadioGroup';
 export { Select, SelectItem, selectStyles, type SelectProps, type SelectItemProps } from './components/Select/Select';
 export { Dialog, DialogFooter, DialogTrigger, dialogStyles, type DialogProps } from './components/Dialog/Dialog';
 export {

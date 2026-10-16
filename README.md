@@ -17,6 +17,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **IconButton** | `Button` | Required `aria-label` (a type error without it); icon hidden from assistive tech |
 | **Skeleton** | Plain `<div>` | `text` and `block` shapes; pulse is disabled for `prefers-reduced-motion` |
 | **Popover** | React Aria `Popover`, `Dialog`, `DialogTrigger` | Standalone dialog popover and the base surface for Select and Menu; focus return and Escape handled |
+| **RadioGroup** | React Aria `RadioGroup`, `Radio` | One tab stop with arrow-key selection, per-option descriptions, vertical or horizontal, label, description, error, form `name` |
 | **Select** | React Aria `Select`, `ListBox`, `Popover` | Keyboard navigation, typeahead, label, description, error, static or dynamic items |
 | **Dialog** | React Aria `Modal`, `Dialog` | Focus trap, scroll lock, Escape and outside-click dismiss; `alertdialog` mode for destructive confirmations |
 | **Tooltip** | React Aria `TooltipTrigger`, `Tooltip` | Shows on hover and keyboard focus, hides on Escape, 500ms default delay, linked via `aria-describedby` |
@@ -28,7 +29,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: Menu, RadioGroup, and a multi-step form Stepper.
+More are planned: Menu and a multi-step form Stepper.
 
 ## Theming
 
