@@ -48,7 +48,7 @@ function ratio(a: string | undefined, b: string | undefined) {
   return (hi + 0.05) / (lo + 0.05);
 }
 
-const surfaces = ['bg', 'surface', 'raised'] as const;
+const surfaces = ['bg', 'surface', 'raised', 'overlay', 'overlay-hover'] as const;
 
 // Minimum ratio per foreground token: standard themes vs. increased contrast (AAA).
 const minimums: Record<string, { standard: number; contrast: number }> = {
@@ -74,6 +74,14 @@ describe.each(Object.entries(themes))('%s palette', (name, tokens) => {
     expect(ratio(tokens['accent-fg'], tokens['accent'])).toBeGreaterThanOrEqual(min);
     expect(ratio(tokens['accent-fg'], tokens['accent-hover'])).toBeGreaterThanOrEqual(min);
   });
+
+  if (name.startsWith('dark')) {
+    // Shadows don't show on near-black, so a floating layer's edge must be visible on its own.
+    it('gives floating layers a visible edge against the page', () => {
+      const min = level === 'contrast' ? 4.5 : 3;
+      expect(ratio(tokens['overlay-border'], tokens['bg'])).toBeGreaterThanOrEqual(min);
+    });
+  }
 
   if (level === 'contrast') {
     it('makes even the decorative border clearly visible', () => {

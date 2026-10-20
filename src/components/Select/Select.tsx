@@ -31,7 +31,7 @@ export const selectStyles = tv({
     listbox: 'max-h-[inherit] overflow-auto p-1 outline-hidden',
     item: [
       'flex cursor-default items-center justify-between gap-3 rounded-sm px-2.5 py-1.5 text-sm text-text outline-hidden',
-      'data-[focused]:bg-raised data-[selected]:font-medium',
+      'data-[focused]:bg-overlay-hover data-[selected]:font-medium',
       'data-[focus-visible]:outline-2 data-[focus-visible]:-outline-offset-2 data-[focus-visible]:outline-accent',
       'data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50',
     ],

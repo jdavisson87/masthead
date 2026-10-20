@@ -21,6 +21,9 @@ const swatches = [
   { name: 'accent-hover', cls: 'bg-accent-hover' },
   { name: 'danger', cls: 'bg-danger' },
   { name: 'success', cls: 'bg-success' },
+  { name: 'overlay', cls: 'bg-overlay' },
+  { name: 'overlay-border', cls: 'bg-overlay-border' },
+  { name: 'overlay-hover', cls: 'bg-overlay-hover' },
 ];
 
 export const Colors: Story = {

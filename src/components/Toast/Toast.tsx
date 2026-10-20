@@ -33,7 +33,7 @@ export const toastStyles = tv({
     region:
       'fixed bottom-4 right-4 z-50 flex w-[calc(100vw-2rem)] max-w-sm flex-col gap-2 outline-hidden data-[focus-visible]:outline-2 data-[focus-visible]:outline-offset-2 data-[focus-visible]:outline-accent',
     toast: [
-      'flex items-start gap-3 rounded-lg border border-l-[3px] border-border bg-surface p-4 font-sans text-text shadow-popover outline-hidden',
+      'flex items-start gap-3 rounded-lg border border-l-[3px] border-overlay-border bg-overlay p-4 font-sans text-text shadow-popover outline-hidden',
       'animate-dialog-in motion-reduce:animate-none',
       'data-[focus-visible]:outline-2 data-[focus-visible]:outline-accent',
     ],
