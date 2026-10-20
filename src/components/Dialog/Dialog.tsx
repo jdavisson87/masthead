@@ -15,7 +15,7 @@ export const dialogStyles = tv({
     overlay:
       'fixed inset-0 z-50 flex min-h-full items-center justify-center overflow-y-auto bg-scrim p-4 data-[entering]:animate-fade-in motion-reduce:animate-none',
     modal:
-      'w-full rounded-lg border border-border bg-surface font-sans text-text shadow-popover data-[entering]:animate-dialog-in motion-reduce:animate-none',
+      'w-full rounded-lg border border-overlay-border bg-overlay font-sans text-text shadow-popover data-[entering]:animate-dialog-in motion-reduce:animate-none',
     dialog: 'relative flex flex-col gap-4 p-6 outline-hidden',
     title: 'pr-8 font-serif text-2xl font-medium leading-snug text-text',
     description: 'text-sm text-muted',

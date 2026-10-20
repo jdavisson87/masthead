@@ -10,7 +10,7 @@ import { tv } from 'tailwind-variants';
 export const popoverStyles = tv({
   slots: {
     popover: [
-      'rounded-lg border border-border bg-surface font-sans text-text shadow-popover',
+      'rounded-lg border border-overlay-border bg-overlay font-sans text-text shadow-popover',
       'data-[entering]:animate-popover-in motion-reduce:animate-none',
     ],
     dialog: 'p-4 text-sm outline-hidden',
