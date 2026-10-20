@@ -26,6 +26,9 @@
   --color-accent-fg: var(--ds-accent-fg);
   --color-danger: var(--ds-danger);
   --color-success: var(--ds-success);
+  --color-overlay: var(--ds-overlay);
+  --color-overlay-border: var(--ds-overlay-border);
+  --color-overlay-hover: var(--ds-overlay-hover);
 
   --font-serif: "Newsreader Variable", "Newsreader", Georgia, serif;
   --font-sans: "Inter Variable", "Inter", system-ui, sans-serif;
@@ -51,16 +54,21 @@
   --ds-danger: #b42318;
   --ds-success: #166534;
 
+  /* Floating layers (Menu, Popover, Select list, Dialog, Toast). In light mode the shadow does the lifting. */
+  --ds-overlay: #ffffff;
+  --ds-overlay-border: #e2dfd6;
+  --ds-overlay-hover: #f3f1eb; /* highlighted row */
+
   --ds-focus-width: 2px;
   --ds-control-border: 1px;
 }
 
 .dark {
   --ds-bg: #0c0d0b;
-  --ds-surface: #141512;
-  --ds-raised: #1c1d19;
-  --ds-border: #2a2c26;
-  --ds-border-strong: #686d5c; /* 3:1+ on bg, surface, raised */
+  --ds-surface: #1a1b17;
+  --ds-raised: #252722;
+  --ds-border: #3b3e35;
+  --ds-border-strong: #7d8270; /* 3:1+ on bg, surface, raised */
   --ds-text: #ecebe4;
   --ds-muted: #a3a399;
   --ds-accent: #f5b942; /* amber */
@@ -68,6 +76,11 @@
   --ds-accent-fg: #0c0d0b; /* dark text on amber */
   --ds-danger: #f97066;
   --ds-success: #86efac;
+
+  /* Shadows vanish on near-black, so floating layers get a lighter fill and a visible edge (~3:1 against the page). */
+  --ds-overlay: #232520;
+  --ds-overlay-border: #5c6152;
+  --ds-overlay-hover: #30322b;
 }
 
 /*
@@ -90,6 +103,10 @@
   --ds-danger: #8c0f0f;
   --ds-success: #0b4a1c;
 
+  --ds-overlay: #ffffff;
+  --ds-overlay-border: #6b685e;
+  --ds-overlay-hover: #efede6;
+
   --ds-focus-width: 3px;
   --ds-control-border: 2px;
 }
@@ -107,6 +124,10 @@
   --ds-accent-fg: #000000;
   --ds-danger: #ff9d96;
   --ds-success: #9df5b0;
+
+  --ds-overlay: #0a0a08;
+  --ds-overlay-border: #8f8f82;
+  --ds-overlay-hover: #1a1a16;
 }
 
 /*

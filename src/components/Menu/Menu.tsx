@@ -29,7 +29,7 @@ export const menuStyles = tv({
     list: 'max-h-[inherit] overflow-auto p-1 font-sans text-sm outline-hidden',
     item: [
       'flex cursor-default select-none items-center gap-2.5 rounded-sm px-2.5 py-1.5 outline-hidden',
-      'data-[focused]:bg-raised data-[pressed]:bg-raised',
+      'data-[focused]:bg-overlay-hover data-[pressed]:bg-overlay-hover',
       'data-[focus-visible]:outline-2 data-[focus-visible]:-outline-offset-2 data-[focus-visible]:outline-accent',
       'data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50',
     ],
