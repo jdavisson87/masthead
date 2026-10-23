@@ -30,7 +30,8 @@
     "build-storybook": "storybook build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepare": "git config core.hooksPath .githooks || true"
   },
   "peerDependencies": {
     "react": ">=18",

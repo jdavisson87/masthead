@@ -1,0 +1,19 @@
+#!/bin/sh
+# Runs before every `git commit`. The commit is aborted if typecheck or tests fail.
+# Skip once with: git commit --no-verify
+
+echo "pre-commit: typecheck..."
+if ! npm run --silent typecheck; then
+  echo ""
+  echo "Typecheck failed. Commit aborted. Fix the errors above, or skip with --no-verify."
+  exit 1
+fi
+
+echo "pre-commit: tests..."
+if ! npm test --silent; then
+  echo ""
+  echo "Tests failed. Commit aborted. Fix the failures above, or skip with --no-verify."
+  exit 1
+fi
+
+echo "pre-commit: all checks passed."
