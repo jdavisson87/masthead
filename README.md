@@ -14,6 +14,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **TextArea** | React Aria `TextField` + `TextArea` | Same field language as TextField; rows, optional resize, auto-grow, character counter with `maxLength` |
 | **NumberField** | React Aria `NumberField` | Typed or stepped input, arrow / Page / Home / End keys, min / max / step, currency, percent and unit formats, locale-aware parsing |
 | **Link** | React Aria `Link`, `RouterProvider` | Always underlined, inherits type size, safe `target="_blank"` handling with a screen-reader note, current-page state, works as an `<a>` or an action, client-side routing |
+| **Separator** | React Aria `Separator` | Horizontal or vertical; subtle, strong or ink tone; thin or thick weight; `decorative` mode that hides it from assistive tech |
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |
@@ -33,7 +34,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: a multi-step form Stepper, Progress, and Tag.
+More are planned: a multi-step form Stepper, Progress and Spinner, and Tag.
 
 ## Theming
 
