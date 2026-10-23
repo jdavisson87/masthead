@@ -2,6 +2,8 @@ import './styles.css';
 
 export { Button, buttonStyles, type ButtonProps } from './components/Button/Button';
 export { TextField, textFieldStyles, type TextFieldProps } from './components/TextField/TextField';
+export { TextArea, textAreaStyles, type TextAreaProps } from './components/TextArea/TextArea';
+export { NumberField, numberFieldStyles, type NumberFieldProps } from './components/NumberField/NumberField';
 export { Checkbox, checkboxStyles, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { Switch, switchStyles, type SwitchProps } from './components/Switch/Switch';
 export { Badge, badgeStyles, type BadgeProps } from './components/Badge/Badge';
