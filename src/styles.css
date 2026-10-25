@@ -187,3 +187,19 @@
     }
   }
 }
+
+/*
+ * Ticker: the track holds two identical halves, so sliding it by half its width loops seamlessly.
+ * The duration is set inline per ticker (from its measured width and speed), not here.
+ */
+@theme {
+  --animate-ticker: ticker 30s linear infinite;
+  @keyframes ticker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}

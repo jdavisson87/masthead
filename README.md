@@ -18,6 +18,8 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **ProgressBar** | React Aria `ProgressBar` | Determinate and indeterminate, value shown as text, custom range and value label, sizes and tones, reduced-motion fallback |
 | **Spinner** | React Aria `ProgressBar` (indeterminate) | Named `progressbar`, sizes and tones, optional visible label, `decorative` mode for use inside buttons, static under reduced motion |
 | **Tag** | React Aria `TagGroup`, `TagList`, `Tag` | Selectable (single or multiple) and removable chips, arrow-key navigation, Delete / Backspace to remove, check mark on selected, empty state, sizes |
+| **Ticker** | Plain elements + `IconButton` | News-style scrolling ticker for any feed (scores, quotes, headlines); pause button, pauses on hover and focus, static under reduced motion, hidden loop copies, up / down tones with arrows |
+| **Stepper** | Plain elements + React Aria `Button` | Ordered list with `aria-current="step"`, state in text + icon (never color alone), horizontal / vertical / compact, circle or square markers, back-navigation to finished steps, `useStepFocus` hook for focus management |
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |
@@ -37,7 +39,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: a multi-step form Stepper, Combobox, and more.
+More are planned: Combobox, Pagination, Avatar, and more.
 
 ## Theming
 

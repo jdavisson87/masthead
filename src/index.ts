@@ -9,6 +9,15 @@ export { Separator, separatorStyles, type SeparatorProps } from './components/Se
 export { ProgressBar, progressBarStyles, type ProgressBarProps } from './components/ProgressBar/ProgressBar';
 export { Spinner, spinnerStyles, type SpinnerProps } from './components/Spinner/Spinner';
 export { Tag, TagGroup, tagStyles, type TagProps, type TagGroupProps } from './components/Tag/Tag';
+export { Ticker, tickerStyles, computeTickerLayout, type TickerProps, type TickerItem } from './components/Ticker/Ticker';
+export {
+  Stepper,
+  useStepFocus,
+  stepperStyles,
+  type StepperProps,
+  type StepperStep,
+  type StepStatus,
+} from './components/Stepper/Stepper';
 export { Checkbox, checkboxStyles, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { Switch, switchStyles, type SwitchProps } from './components/Switch/Switch';
 export { Badge, badgeStyles, type BadgeProps } from './components/Badge/Badge';
