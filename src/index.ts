@@ -8,6 +8,7 @@ export { Link, RouterProvider, linkStyles, type LinkProps } from './components/L
 export { Separator, separatorStyles, type SeparatorProps } from './components/Separator/Separator';
 export { ProgressBar, progressBarStyles, type ProgressBarProps } from './components/ProgressBar/ProgressBar';
 export { Spinner, spinnerStyles, type SpinnerProps } from './components/Spinner/Spinner';
+export { Tag, TagGroup, tagStyles, type TagProps, type TagGroupProps } from './components/Tag/Tag';
 export { Checkbox, checkboxStyles, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { Switch, switchStyles, type SwitchProps } from './components/Switch/Switch';
 export { Badge, badgeStyles, type BadgeProps } from './components/Badge/Badge';

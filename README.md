@@ -17,6 +17,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Separator** | React Aria `Separator` | Horizontal or vertical; subtle, strong or ink tone; thin or thick weight; `decorative` mode that hides it from assistive tech |
 | **ProgressBar** | React Aria `ProgressBar` | Determinate and indeterminate, value shown as text, custom range and value label, sizes and tones, reduced-motion fallback |
 | **Spinner** | React Aria `ProgressBar` (indeterminate) | Named `progressbar`, sizes and tones, optional visible label, `decorative` mode for use inside buttons, static under reduced motion |
+| **Tag** | React Aria `TagGroup`, `TagList`, `Tag` | Selectable (single or multiple) and removable chips, arrow-key navigation, Delete / Backspace to remove, check mark on selected, empty state, sizes |
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |
@@ -36,7 +37,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: a multi-step form Stepper and Tag.
+More are planned: a multi-step form Stepper, Combobox, and more.
 
 ## Theming
 
