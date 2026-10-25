@@ -20,6 +20,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Tag** | React Aria `TagGroup`, `TagList`, `Tag` | Selectable (single or multiple) and removable chips, arrow-key navigation, Delete / Backspace to remove, check mark on selected, empty state, sizes |
 | **Ticker** | Plain elements + `IconButton` | News-style scrolling ticker for any feed (scores, quotes, headlines); pause button, pauses on hover and focus, static under reduced motion, hidden loop copies, up / down tones with arrows |
 | **Stepper** | Plain elements + React Aria `Button` | Ordered list with `aria-current="step"`, state in text + icon (never color alone), horizontal / vertical / compact, circle or square markers, back-navigation to finished steps, `useStepFocus` hook for focus management |
+| **Pagination** | React Aria `Button` / `Link` | Labelled `<nav>` + list, `aria-current="page"`, constant-width row with ellipses (`getPaginationRange` exported), optional link mode via `getHref`, page summary, sm / md sizes |
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |
@@ -39,7 +40,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 
 Every interactive component has keyboard tests and automated axe checks, and control boundaries meet the WCAG 3:1 non-text contrast minimum in both themes.
 
-More are planned: Combobox, Pagination, Avatar, and more.
+More are planned: Combobox, Avatar, and more.
 
 ## Theming
 

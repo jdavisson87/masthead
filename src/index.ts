@@ -117,3 +117,10 @@ export {
   type Theme,
   type ResolvedTheme,
 } from './theme/theme';
+export {
+  Pagination,
+  paginationStyles,
+  getPaginationRange,
+  type PaginationProps,
+  type PaginationItem,
+} from './components/Pagination/Pagination';
