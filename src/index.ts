@@ -7,6 +7,7 @@ export { NumberField, numberFieldStyles, type NumberFieldProps } from './compone
 export { Link, RouterProvider, linkStyles, type LinkProps } from './components/Link/Link';
 export { Separator, separatorStyles, type SeparatorProps } from './components/Separator/Separator';
 export { ProgressBar, progressBarStyles, type ProgressBarProps } from './components/ProgressBar/ProgressBar';
+export { Spinner, spinnerStyles, type SpinnerProps } from './components/Spinner/Spinner';
 export { Checkbox, checkboxStyles, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { Switch, switchStyles, type SwitchProps } from './components/Switch/Switch';
 export { Badge, badgeStyles, type BadgeProps } from './components/Badge/Badge';
