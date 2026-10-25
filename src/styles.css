@@ -174,3 +174,16 @@
     }
   }
 }
+
+/* Progress: the sliding block of an indeterminate bar. Its width is a third of the track, so 300% crosses it fully. */
+@theme {
+  --animate-progress-indeterminate: progress-indeterminate 1.4s ease-in-out infinite;
+  @keyframes progress-indeterminate {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(300%);
+    }
+  }
+}

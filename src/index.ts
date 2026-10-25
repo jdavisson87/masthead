@@ -6,6 +6,7 @@ export { TextArea, textAreaStyles, type TextAreaProps } from './components/TextA
 export { NumberField, numberFieldStyles, type NumberFieldProps } from './components/NumberField/NumberField';
 export { Link, RouterProvider, linkStyles, type LinkProps } from './components/Link/Link';
 export { Separator, separatorStyles, type SeparatorProps } from './components/Separator/Separator';
+export { ProgressBar, progressBarStyles, type ProgressBarProps } from './components/ProgressBar/ProgressBar';
 export { Checkbox, checkboxStyles, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { Switch, switchStyles, type SwitchProps } from './components/Switch/Switch';
 export { Badge, badgeStyles, type BadgeProps } from './components/Badge/Badge';
