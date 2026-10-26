@@ -42,6 +42,18 @@ Every interactive component has keyboard tests and automated axe checks, and con
 
 More are planned: Combobox, Avatar, and more.
 
+## Type and spacing scale
+
+One file, `src/theme/scale.css`, defines every text size and layout space. Each value is a CSS variable, so it works with Tailwind utilities, ready-made classes, or plain CSS.
+
+| Scale | Names | Tailwind | Class | CSS variable |
+| --- | --- | --- | --- | --- |
+| Headings (serif) | `xs` `sm` `md` `lg` `xl` | `text-heading-md` | `masthead-heading-md` | `var(--text-heading-md)` |
+| Body (sans) | `xs` `sm` `md` `lg` `xl` | `text-body-md` | `masthead-body-md` | `var(--text-body-md)` |
+| Spacing | `xs` `sm` `md` `lg` `xl` | `p-md`, `gap-sm` | n/a | `var(--spacing-md)` |
+
+Sizes are in `rem`, so they follow the reader's browser setting; `heading-lg` and `heading-xl` scale fluidly. Override any variable on `:root` to retune the system. See **Foundations / Type and spacing** in Storybook.
+
 ## Theming
 
 Dark mode is a `.dark` class on `<html>`. Masthead manages it for you:
