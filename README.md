@@ -22,6 +22,13 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Stepper** | Plain elements + React Aria `Button` | Ordered list with `aria-current="step"`, state in text + icon (never color alone), horizontal / vertical / compact, circle or square markers, back-navigation to finished steps, `useStepFocus` hook for focus management |
 | **Pagination** | React Aria `Button` / `Link` | Labelled `<nav>` + list, `aria-current="page"`, constant-width row with ellipses (`getPaginationRange` exported), optional link mode via `getHref`, page summary, sm / md sizes |
 | **Avatar** | Plain elements | Single `role="img"` named after the person, photo swaps in only after it loads, initials fallback (never a broken image), circle / square, five sizes, `decorative` mode for bylines, `AvatarGroup` with overlap and "+N" overflow |
+| **Kicker** | Plain element | Mono uppercase section label above a headline; accent or muted |
+| **Byline** | `Avatar`, `Link` | Authors joined in the reader's language, `<time>` date, publication, reading time, decorative avatars, spoken separators |
+| **Pull Quote** | `<figure>` / `<blockquote>` | Hanging quotation mark, `<cite>` source and `cite` URL, md / lg, optional accent rule, centered variant |
+| **Drop Cap** | CSS `::first-letter` | Text stays one unbroken string for screen readers and copy; 2 to 4 line initials |
+| **Keyboard Shortcut** | `<kbd>` + `useKeyboardShortcut` | Platform-aware keys (Cmd vs Ctrl), full key names for screen readers, and a hook that binds the same key list to a real shortcut |
+| **Clamp** | React Aria `Button` | Collapses text to N lines; the toggle appears only when text is cut off, with `aria-expanded` / `aria-controls`; full text stays in the DOM |
+| **Breaking Banner** | `IconButton` | Info / success / critical with icon + text label (never color alone), `role="alert"` only for critical, optional action and dismiss |
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |

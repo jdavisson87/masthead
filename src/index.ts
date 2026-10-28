@@ -135,3 +135,20 @@ export {
   type AvatarSize,
   type AvatarShape,
 } from './components/Avatar/Avatar';
+export { Kicker, kickerStyles, type KickerProps } from './components/Kicker/Kicker';
+export { Byline, bylineStyles, formatBylineDate, type BylineProps, type BylineAuthor } from './components/Byline/Byline';
+export { PullQuote, pullQuoteStyles, type PullQuoteProps } from './components/PullQuote/PullQuote';
+export { DropCap, dropCapStyles, type DropCapProps } from './components/DropCap/DropCap';
+export {
+  Kbd,
+  kbdStyles,
+  describeKey,
+  matchesShortcut,
+  usePlatform,
+  useKeyboardShortcut,
+  type KbdProps,
+  type Platform,
+  type UseKeyboardShortcutOptions,
+} from './components/Kbd/Kbd';
+export { Clamp, clampStyles, type ClampProps } from './components/Clamp/Clamp';
+export { Banner, bannerStyles, type BannerProps, type BannerSeverity } from './components/Banner/Banner';
