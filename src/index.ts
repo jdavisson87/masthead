@@ -124,3 +124,14 @@ export {
   type PaginationProps,
   type PaginationItem,
 } from './components/Pagination/Pagination';
+export {
+  Avatar,
+  AvatarGroup,
+  avatarStyles,
+  getInitials,
+  type AvatarProps,
+  type AvatarGroupProps,
+  type AvatarGroupPerson,
+  type AvatarSize,
+  type AvatarShape,
+} from './components/Avatar/Avatar';
