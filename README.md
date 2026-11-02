@@ -29,6 +29,8 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Keyboard Shortcut** | `<kbd>` + `useKeyboardShortcut` | Platform-aware keys (Cmd vs Ctrl), full key names for screen readers, and a hook that binds the same key list to a real shortcut |
 | **Clamp** | React Aria `Button` | Collapses text to N lines; the toggle appears only when text is cut off, with `aria-expanded` / `aria-controls`; full text stays in the DOM |
 | **Breaking Banner** | `IconButton` | Info / success / critical with icon + text label (never color alone), `role="alert"` only for critical, optional action and dismiss |
+| **Sparkline** | Inline SVG | Line / area / bars; one `role="img"` whose name is a spoken summary (start, end, change, low, high); `summarizeSeries` exported |
+| **Delta / Stat** | Plain elements + `Sparkline` | Arrow + size of change read as "Up 12.5% versus last month" (never color alone); `invert` for lower-is-better metrics; `Stat` is a `<dl>` with value, delta, trend and hint |
 | **Checkbox** | React Aria `Checkbox` | Checked, indeterminate, invalid, and disabled states |
 | **Switch** | React Aria `Switch` | Squared track and thumb; respects `prefers-reduced-motion` |
 | **Badge** | Plain `<span>` | `neutral`, `accent`, `success`, `danger` tones |

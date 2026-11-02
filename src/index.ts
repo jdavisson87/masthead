@@ -152,3 +152,23 @@ export {
 } from './components/Kbd/Kbd';
 export { Clamp, clampStyles, type ClampProps } from './components/Clamp/Clamp';
 export { Banner, bannerStyles, type BannerProps, type BannerSeverity } from './components/Banner/Banner';
+export {
+  Sparkline,
+  sparklineStyles,
+  summarizeSeries,
+  describeSeries,
+  getSparklinePoints,
+  type SparklineProps,
+  type SeriesSummary,
+} from './components/Sparkline/Sparkline';
+export {
+  Delta,
+  deltaStyles,
+  getDeltaDirection,
+  getDeltaSentiment,
+  formatDeltaValue,
+  type DeltaProps,
+  type DeltaDirection,
+  type DeltaSentiment,
+} from './components/Stat/Delta';
+export { Stat, statStyles, type StatProps } from './components/Stat/Stat';
