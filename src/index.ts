@@ -62,6 +62,13 @@ export {
   type MenuSectionProps,
 } from './components/Menu/Menu';
 export { Select, SelectItem, selectStyles, type SelectProps, type SelectItemProps } from './components/Select/Select';
+export {
+  ComboBox,
+  ComboBoxItem,
+  comboBoxStyles,
+  type ComboBoxProps,
+  type ComboBoxItemProps,
+} from './components/ComboBox/ComboBox';
 export { Dialog, DialogFooter, DialogTrigger, dialogStyles, type DialogProps } from './components/Dialog/Dialog';
 export {
   Tooltip,
