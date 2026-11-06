@@ -172,3 +172,16 @@ export {
   type DeltaSentiment,
 } from './components/Stat/Delta';
 export { Stat, statStyles, type StatProps } from './components/Stat/Stat';
+export {
+  FootnoteRef,
+  Footnotes,
+  Sidenote,
+  footnoteStyles,
+  footnoteId,
+  footnoteRefId,
+  useMediaQuery,
+  type FootnoteRefProps,
+  type FootnotesProps,
+  type FootnoteItem,
+  type SidenoteProps,
+} from './components/Footnote/Footnote';
