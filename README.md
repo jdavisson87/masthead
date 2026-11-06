@@ -41,6 +41,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **RadioGroup** | React Aria `RadioGroup`, `Radio` | One tab stop with arrow-key selection, per-option descriptions, vertical or horizontal, label, description, error, form `name` |
 | **Menu** | React Aria `MenuTrigger`, `Menu`, `MenuItem`, `MenuSection`, `SubmenuTrigger` | Arrow-key and typeahead navigation, icons, shortcut hints, descriptions, danger tone, sections, single or multiple selection, submenus |
 | **Select** | React Aria `Select`, `ListBox`, `Popover` | Keyboard navigation, typeahead, label, description, error, static or dynamic items |
+| **ComboBox** | React Aria `ComboBox`, `ListBox`, `Popover` | Type to filter (built-in or your own), "no results" message, optional custom values, open on type / focus / button only, same field look and option rows as Select |
 | **Dialog** | React Aria `Modal`, `Dialog` | Focus trap, scroll lock, Escape and outside-click dismiss; `alertdialog` mode for destructive confirmations |
 | **Tooltip** | React Aria `TooltipTrigger`, `Tooltip` | Shows on hover and keyboard focus, hides on Escape, 500ms default delay, linked via `aria-describedby` |
 | **Toast** | React Aria toast region and queue | `<Toaster />` plus `toast.success()` / `toast.error()` from anywhere; timers pause on hover and focus; F6 jumps to the region |
