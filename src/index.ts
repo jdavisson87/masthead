@@ -157,6 +157,15 @@ export {
   type Platform,
   type UseKeyboardShortcutOptions,
 } from './components/Kbd/Kbd';
+export {
+  CommandPalette,
+  CommandItem,
+  CommandSection,
+  commandPaletteStyles,
+  type CommandPaletteProps,
+  type CommandItemProps,
+  type CommandSectionProps,
+} from './components/CommandPalette/CommandPalette';
 export { Clamp, clampStyles, type ClampProps } from './components/Clamp/Clamp';
 export { Banner, bannerStyles, type BannerProps, type BannerSeverity } from './components/Banner/Banner';
 export {
