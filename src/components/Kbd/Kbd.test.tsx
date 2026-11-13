@@ -19,19 +19,34 @@ describe('Kbd', () => {
   it('shows Mac glyphs with full names for screen readers', () => {
     render(<Kbd keys={['mod', 'K']} platform="mac" />);
     expect(screen.getByText('⌘')).toHaveAttribute('aria-hidden', 'true');
-    expect(screen.getByText('Command')).toHaveClass('sr-only');
-    expect(screen.getByText('K')).toBeInTheDocument();
+    expect(screen.getByText('K')).toHaveAttribute('aria-hidden', 'true');
+    expect(screen.getByText('Command plus K')).toHaveClass('sr-only');
   });
 
   it('shows Ctrl on other platforms', () => {
     render(<Kbd keys={['mod', 'K']} platform="other" />);
-    expect(screen.getByText('Control')).toBeInTheDocument();
+    expect(screen.getByText('Ctrl')).toBeInTheDocument();
+    expect(screen.getByText('Control plus K')).toBeInTheDocument();
     expect(screen.queryByText('⌘')).not.toBeInTheDocument();
   });
 
   it('speaks "plus" between keys', () => {
     render(<Kbd keys={['shift', 'alt', 'enter']} platform="other" />);
-    expect(screen.getAllByText('plus')).toHaveLength(2);
+    expect(screen.getByText('Shift plus Alt plus Enter')).toHaveClass('sr-only');
+  });
+
+  it('keeps the words apart when read as one string, such as a description', () => {
+    render(
+      <>
+        <button type="button" aria-describedby="hint">
+          Search
+        </button>
+        <span id="hint">
+          <Kbd keys={['mod', 'K']} platform="mac" />
+        </span>
+      </>,
+    );
+    expect(screen.getByRole('button')).toHaveAccessibleDescription('Command plus K');
   });
 
   it('nests <kbd> elements for a combination', () => {
