@@ -85,17 +85,14 @@ export function Kbd({ keys, size = 'md', platform, className }: KbdProps) {
   const s = kbdStyles({ size });
   return (
     <kbd className={s.group({ className })}>
-      {keys.map((key, i) => {
-        const [symbol, name] = describeKey(key, p);
-        const plain = symbol === name;
-        return (
-          <kbd key={`${key}-${i}`} className={s.key()}>
-            {i > 0 && <span className="sr-only">plus</span>}
-            <span aria-hidden={plain ? undefined : true}>{symbol}</span>
-            {!plain && <span className="sr-only">{name}</span>}
-          </kbd>
-        );
-      })}
+      {/* One spoken string for the whole combination. Separate per-key spans run together
+          ("CommandplusK") when the combination is read as one string, e.g. as an aria-describedby target. */}
+      <span className="sr-only">{keys.map((key) => describeKey(key, p)[1]).join(' plus ')}</span>
+      {keys.map((key, i) => (
+        <kbd key={`${key}-${i}`} aria-hidden="true" className={s.key()}>
+          {describeKey(key, p)[0]}
+        </kbd>
+      ))}
     </kbd>
   );
 }
