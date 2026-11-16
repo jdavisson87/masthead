@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode, type Ref } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { IconButton } from '../IconButton/IconButton';
 
 /**

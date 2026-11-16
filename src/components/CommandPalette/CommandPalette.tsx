@@ -14,7 +14,7 @@ import {
   type Key,
   type MenuItemProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Kbd, useKeyboardShortcut } from '../Kbd/Kbd';
 import { MenuSection, menuStyles, type MenuSectionProps } from '../Menu/Menu';
 
@@ -33,9 +33,7 @@ export const commandPaletteStyles = tv({
     dialog: 'flex max-h-[min(32rem,76vh)] flex-col outline-hidden',
     search:
       'flex shrink-0 items-center gap-2.5 border-b-2 border-border px-4 text-muted transition-colors has-[[data-focused]]:border-accent',
-    // No text color here: tailwind-merge would treat `text-body-md` and a `text-*` color as one group
-    // and drop the size. The input inherits `text-text` from the modal.
-    input: 'h-12 min-w-0 flex-1 bg-transparent text-body-md outline-hidden placeholder:text-muted',
+    input: 'h-12 min-w-0 flex-1 bg-transparent text-body-md text-text outline-hidden placeholder:text-muted',
     list: 'min-h-0 flex-1 overflow-auto p-1.5 text-sm outline-hidden',
     empty: 'px-3 py-8 text-center text-sm text-muted',
     footer:

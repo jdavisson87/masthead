@@ -8,7 +8,7 @@ import {
   type TextFieldProps as AriaTextFieldProps,
   type ValidationResult,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { textFieldStyles } from '../TextField/TextField';
 
 /**

@@ -1,5 +1,5 @@
 import { Fragment, type ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Avatar } from '../Avatar/Avatar';
 import { Link } from '../Link/Link';
 

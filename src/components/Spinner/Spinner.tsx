@@ -1,5 +1,5 @@
 import { ProgressBar as AriaProgressBar } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * An indeterminate loading indicator. Built on React Aria's ProgressBar so it is exposed as a named

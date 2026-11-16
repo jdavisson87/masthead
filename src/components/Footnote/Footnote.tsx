@@ -1,6 +1,6 @@
 import { useState, useSyncExternalStore, useId, type ReactNode } from 'react';
 import { Button as AriaButton } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Three pieces that work together for articles with notes:

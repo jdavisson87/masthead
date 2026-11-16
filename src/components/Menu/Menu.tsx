@@ -14,7 +14,7 @@ import {
   type MenuSectionProps as AriaMenuSectionProps,
   type PopoverProps as AriaPopoverProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Popover } from '../Popover/Popover';
 
 /**

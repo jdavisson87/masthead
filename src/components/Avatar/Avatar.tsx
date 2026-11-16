@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * An avatar is one image that names a person. It renders as a single `role="img"` labelled with the
@@ -11,15 +11,16 @@ export const avatarStyles = tv({
   slots: {
     root: 'relative inline-flex shrink-0 select-none items-center justify-center overflow-hidden border border-border bg-raised align-middle font-sans font-medium text-text',
     image: 'absolute inset-0 size-full object-cover',
-    initials: 'uppercase leading-none tracking-wide',
+    initials: 'uppercase tracking-wide',
   },
   variants: {
     size: {
-      xs: { root: 'size-6', initials: 'text-[0.625rem]' },
-      sm: { root: 'size-8', initials: 'text-xs' },
-      md: { root: 'size-10', initials: 'text-sm' },
-      lg: { root: 'size-14', initials: 'text-base' },
-      xl: { root: 'size-20', initials: 'text-xl' },
+      // leading-none goes after the size: tailwind-merge lets a later font size cancel an earlier leading-*.
+      xs: { root: 'size-6', initials: 'text-[0.625rem] leading-none' },
+      sm: { root: 'size-8', initials: 'text-xs leading-none' },
+      md: { root: 'size-10', initials: 'text-sm leading-none' },
+      lg: { root: 'size-14', initials: 'text-base leading-none' },
+      xl: { root: 'size-20', initials: 'text-xl leading-none' },
     },
     shape: {
       circle: { root: 'rounded-full' },

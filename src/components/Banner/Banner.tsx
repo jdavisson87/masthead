@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { IconButton } from '../IconButton/IconButton';
 
 /**

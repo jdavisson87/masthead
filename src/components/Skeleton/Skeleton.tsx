@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'react';
-import { tv, type VariantProps } from 'tailwind-variants';
+import { tv, type VariantProps } from '../../theme/tv';
 
 /**
  * Loading placeholder. It is decorative (aria-hidden): mark the surrounding region with

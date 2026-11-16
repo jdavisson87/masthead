@@ -12,7 +12,7 @@ import {
   type SelectProps as AriaSelectProps,
   type ValidationResult,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Popover } from '../Popover/Popover';
 
 /**

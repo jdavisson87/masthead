@@ -11,7 +11,7 @@ import {
   type ComboBoxProps as AriaComboBoxProps,
   type ValidationResult,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Popover } from '../Popover/Popover';
 import { SelectItem, type SelectItemProps } from '../Select/Select';
 

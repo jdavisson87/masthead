@@ -7,7 +7,7 @@ import {
   ModalOverlay,
   type DialogProps as AriaDialogProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { IconButton } from '../IconButton/IconButton';
 
 export const dialogStyles = tv({

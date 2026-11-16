@@ -6,7 +6,7 @@ import {
   UNSTABLE_ToastRegion as ToastRegion,
   type QueuedToast,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Button } from '../Button/Button';
 import { IconButton } from '../IconButton/IconButton';
 

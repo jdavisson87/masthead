@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { ToggleButton, ToggleButtonGroup } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { isTheme, setTheme, THEMES, type Theme } from '../../theme/theme';
 import { useTheme } from '../../theme/useTheme';
 

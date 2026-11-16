@@ -4,7 +4,7 @@ import {
   type TooltipProps as AriaTooltipProps,
   type TooltipTriggerComponentProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Inverted surface (text color as background) so it stands out in both themes.

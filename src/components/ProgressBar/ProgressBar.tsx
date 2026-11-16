@@ -1,5 +1,5 @@
 import { Label, ProgressBar as AriaProgressBar, type ProgressBarProps as AriaProgressBarProps } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * The track has a `border-strong` outline and the fill is a solid accent, so the amount is readable without

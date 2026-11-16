@@ -9,7 +9,7 @@ import {
   type TabProps as AriaTabProps,
   type TabsProps as AriaTabsProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Editorial tabs: a 1px rule with a 2px accent underline on the selected tab.

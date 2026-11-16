@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Keyboard shortcut hints that adapt to the reader's platform ("mod" is ⌘ on a Mac and Ctrl elsewhere),
@@ -10,12 +10,13 @@ import { tv } from 'tailwind-variants';
 export const kbdStyles = tv({
   slots: {
     group: 'inline-flex items-center gap-1 align-middle',
-    key: 'inline-flex min-w-[1.5em] items-center justify-center rounded-sm border border-border-strong bg-raised px-1 font-mono font-medium leading-none text-text',
+    key: 'inline-flex min-w-[1.5em] items-center justify-center rounded-sm border border-border-strong bg-raised px-1 font-mono font-medium text-text',
   },
   variants: {
     size: {
-      sm: { key: 'h-5 text-[0.6875rem]' },
-      md: { key: 'h-6 text-body-xs' },
+      // leading-none goes after the size: tailwind-merge lets a later font size cancel an earlier leading-*.
+      sm: { key: 'h-5 text-[0.6875rem] leading-none' },
+      md: { key: 'h-6 text-body-xs leading-none' },
     },
   },
   defaultVariants: { size: 'md' },

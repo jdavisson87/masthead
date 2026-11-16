@@ -5,7 +5,7 @@ import {
   type DialogProps as AriaDialogProps,
   type PopoverProps as AriaPopoverProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 export const popoverStyles = tv({
   slots: {

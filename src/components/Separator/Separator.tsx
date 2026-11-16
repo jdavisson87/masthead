@@ -1,5 +1,5 @@
 import { Separator as AriaSeparator, type SeparatorProps as AriaSeparatorProps } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * A rule between content. It is drawn with a background fill, not a border, so the same element works
