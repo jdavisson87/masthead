@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * An editorial drop cap. It uses the CSS ::first-letter pseudo-element, so the text stays one unbroken

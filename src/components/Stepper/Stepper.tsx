@@ -1,6 +1,6 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { Button } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Progress through a multi-step flow. It is a real ordered list inside a labelled <nav>:

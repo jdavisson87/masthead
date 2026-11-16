@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Link as AriaLink, RouterProvider, type LinkProps as AriaLinkProps } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Links are always underlined: color alone is not enough to tell a link from the text around it (WCAG 1.4.1).

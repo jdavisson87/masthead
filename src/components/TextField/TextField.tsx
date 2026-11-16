@@ -7,7 +7,7 @@ import {
   type TextFieldProps as AriaTextFieldProps,
   type ValidationResult,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Control boundaries use `border-strong` (3:1+ contrast, WCAG 1.4.11).

@@ -9,7 +9,7 @@ import {
   type NumberFieldProps as AriaNumberFieldProps,
   type ValidationResult,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * One bordered control that holds the input and the stepper buttons, so hover, focus and invalid

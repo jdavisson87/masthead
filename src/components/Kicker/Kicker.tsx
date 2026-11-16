@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * A kicker is the short label above a headline ("Politics", "Analysis", "Live"). It is plain text in the

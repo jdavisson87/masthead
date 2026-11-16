@@ -1,4 +1,4 @@
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * A change indicator: an arrow, the size of the change, and an optional period ("vs last month").

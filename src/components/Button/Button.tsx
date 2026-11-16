@@ -1,5 +1,5 @@
 import { Button as AriaButton, type ButtonProps as AriaButtonProps } from 'react-aria-components';
-import { tv, type VariantProps } from 'tailwind-variants';
+import { tv, type VariantProps } from '../../theme/tv';
 
 /**
  * React Aria exposes interaction state as data attributes

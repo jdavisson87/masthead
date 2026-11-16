@@ -1,5 +1,5 @@
 import { Button as AriaButton, Link as AriaLink } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Pagination is navigation, so it renders a labelled <nav> with a list of controls.

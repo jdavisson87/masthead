@@ -9,7 +9,7 @@ import {
   type RadioProps as AriaRadioProps,
   type ValidationResult,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 export const radioGroupStyles = tv({
   slots: {

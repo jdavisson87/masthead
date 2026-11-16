@@ -1,4 +1,4 @@
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * A tiny inline chart of a trend. It is one image (`role="img"`) whose accessible name is a spoken summary:

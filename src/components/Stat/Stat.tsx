@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Delta, getDeltaSentiment, type DeltaProps } from './Delta';
 import { Sparkline, type SparklineProps } from '../Sparkline/Sparkline';
 
@@ -12,14 +12,15 @@ export const statStyles = tv({
   slots: {
     root: 'm-0 flex flex-col gap-1 font-sans text-text',
     label: 'm-0 font-mono text-body-xs font-medium uppercase tracking-[0.12em] text-muted',
-    value: 'm-0 font-serif font-semibold leading-none tabular-nums',
+    value: 'm-0 font-serif font-semibold tabular-nums',
     row: 'm-0 flex flex-wrap items-center gap-x-4 gap-y-1',
     hint: 'm-0 text-body-sm text-muted',
   },
   variants: {
     size: {
-      md: { value: 'text-heading-lg' },
-      lg: { value: 'text-heading-xl' },
+      // leading-none goes after the size: tailwind-merge lets a later font size cancel an earlier leading-*.
+      md: { value: 'text-heading-lg leading-none' },
+      lg: { value: 'text-heading-xl leading-none' },
     },
   },
   defaultVariants: { size: 'md' },

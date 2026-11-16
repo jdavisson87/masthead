@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Switch as AriaSwitch, type SwitchProps as AriaSwitchProps } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Sharp, editorial switch: a squared track with a squared thumb (no pills).

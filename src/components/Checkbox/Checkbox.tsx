@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Checkbox as AriaCheckbox, type CheckboxProps as AriaCheckboxProps } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Visual state comes from React Aria's render props (isSelected, isHovered, ...)

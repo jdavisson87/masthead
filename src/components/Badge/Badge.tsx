@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'react';
-import { tv, type VariantProps } from 'tailwind-variants';
+import { tv, type VariantProps } from '../../theme/tv';
 
 /**
  * Small status label: JetBrains Mono, 12px, uppercase. Text colors all meet

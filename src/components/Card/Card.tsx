@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * Editorial card: a 1px border and small radius, no shadow.

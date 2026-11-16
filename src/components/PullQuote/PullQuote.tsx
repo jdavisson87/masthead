@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 
 /**
  * A pull quote lifts a line out of an article. It is a <figure> holding a <blockquote> and an optional

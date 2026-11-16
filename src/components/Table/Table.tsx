@@ -16,7 +16,7 @@ import {
   type TableHeaderProps as AriaTableHeaderProps,
   type TableProps as AriaTableProps,
 } from 'react-aria-components';
-import { tv } from 'tailwind-variants';
+import { tv } from '../../theme/tv';
 import { Checkbox } from '../Checkbox/Checkbox';
 
 /**
