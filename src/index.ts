@@ -112,6 +112,13 @@ export {
   type TabProps,
   type TabPanelProps,
 } from './components/Tabs/Tabs';
+export {
+  Accordion,
+  AccordionItem,
+  accordionStyles,
+  type AccordionProps,
+  type AccordionItemProps,
+} from './components/Accordion/Accordion';
 export { ThemeToggle, themeToggleStyles, type ThemeToggleProps } from './components/ThemeToggle/ThemeToggle';
 export { ContrastToggle, type ContrastToggleProps } from './components/ThemeToggle/ContrastToggle';
 export { useTheme, type UseThemeResult } from './theme/useTheme';

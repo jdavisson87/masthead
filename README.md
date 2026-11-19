@@ -48,6 +48,7 @@ A sharp, editorial look in light mode, with an amber accent in dark mode.
 | **Toast** | React Aria toast region and queue | `<Toaster />` plus `toast.success()` / `toast.error()` from anywhere; timers pause on hover and focus; F6 jumps to the region |
 | **Table** | React Aria `Table` | Sortable columns, row headers, optional multi-select (reuses Checkbox), empty state, arrow-key cell navigation |
 | **Tabs** | React Aria `Tabs`, `TabList`, `Tab`, `TabPanel` | Horizontal and vertical, arrow / Home / End keys, automatic or manual activation, disabled tabs |
+| **Accordion** | React Aria `DisclosureGroup`, `Disclosure`, `DisclosurePanel` | Title is a real heading (choose the level) wrapping a button with `aria-expanded`; one or several sections open; chevron shape shows state; animated height, static under reduced motion; closed sections still searchable with find-in-page; divided or boxed; an item alone is a single disclosure |
 | **ThemeToggle** / **ContrastToggle** | React Aria `ToggleButtonGroup`, `Switch` | Light / system / dark control plus an increased-contrast switch; persisted, follows OS settings live, syncs across tabs |
 | **Card** | Plain elements | Composable: `Card`, `CardHeader`, `CardTitle` (choose heading level), `CardContent`, `CardFooter` |
 
